@@ -114,8 +114,11 @@ console.log(m);
 
 // use const
 const na = 2;
-na = 6;
 console.log(na);
+
+console.log("mynameis");
+
+
 
 
 
