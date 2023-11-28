@@ -81,3 +81,44 @@ console.log(hello);
 
 // functions
 
+ let  counter0;
+//  console.log(counter);  //  ->  undefined
+ {
+          counter0  =  1;
+         //  console.log(counter);  //  ->  1
+ }
+//  counter0  =  counter0  +  1;
+ console.log(counter0);  //  ->  2
+
+
+ //
+
+ var  globalGreeting  =  "Good  ";
+   
+  function  testFunction()  {
+           var  localGreeting  =  "Morning  ";    
+           console.log("function:");
+ 
+            console.log(globalGreeting);
+           console.log(localGreeting);
+  }
+    
+  testFunction();
+
+    
+  console.log("main  program:");
+ console.log(globalGreeting);
+//  console.log(localGreeting);  //  ->  Uncaught  ReferenceError:  localGreeting  is  not  defined
+
+
+
+var  counter9  =  100;
+   
+ function  testFunction()  {
+          var counter9  =  200;    
+          console.log(counter9);
+ }
+    
+   console.log(counter9);  //  ->  100
+   testFunction();  //  ->  200
+   console.log(counter9);  //  ->  100
