@@ -33,3 +33,4 @@ let halfArea = area / 2;
 
 console.log(year1); 
 console.log(typeof year1);
+

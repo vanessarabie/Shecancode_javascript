@@ -46,5 +46,15 @@ console.log(Boolean(-5));
 
 console.log(Boolean(-0));
 
+// boolean strings
+
+let count = false;
+
+// converting to string
+let result = count.toString();
+
+console.log(result);
+ console.log(typeof result);
+
 
 
