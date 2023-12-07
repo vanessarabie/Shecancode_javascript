@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+
+  <style>
+      button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+  </style>
+</head>
+<body>
+  <button onclick="checkAccount()">Press here</button>
+
+  <script>
+    function checkAccount() {
+      var hasAccount = confirm("Do you have an account?");
+
+      if (hasAccount) {
+       
+        window.location.href = "login.html";  
+      } else {
+        window.location.href = "signp.html";
+      }
+    }
+
+    
+    
+  </script>
+
+
+</body>
+</html> 
+
